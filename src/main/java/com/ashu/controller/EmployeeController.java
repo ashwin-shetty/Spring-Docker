@@ -14,7 +14,7 @@ public class EmployeeController {
     private final AtomicLong counter = new AtomicLong();
 
     @RequestMapping("/employee")
-    public Employee employee1(@RequestParam(value="name", defaultValue="World") String name) {
+    public Employee employee(@RequestParam(value="name", defaultValue="World") String name) {
         return new Employee(counter.incrementAndGet(),
                             String.format(template, name));
     }
