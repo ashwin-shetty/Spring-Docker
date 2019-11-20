@@ -6,3 +6,7 @@
 ### Run 
     Copy the docker-compose.yml file to a seperate folder and then execute the command
     docker-compose up
+    
+### Test
+    On successfull deployment application should open in browser with url
+    http://localhost:8080/   
