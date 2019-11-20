@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    build: .
+    image: "springio/employee:latest"
+    ports:
+      - "8080:8080"
