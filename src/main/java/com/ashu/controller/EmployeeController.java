@@ -13,7 +13,7 @@ public class EmployeeController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
 
-    @RequestMapping("/employee")
+    @RequestMapping("/")
     public Employee employee(@RequestParam(value="name", defaultValue="World") String name) {
         return new Employee(counter.incrementAndGet(),
                             String.format(template, name));
